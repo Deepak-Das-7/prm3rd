@@ -1,33 +1,37 @@
+import { Colors } from '@/constants/colors';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Octicons from '@expo/vector-icons/Octicons';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: Colors.primary,
         headerShown: false,
-        tabBarButton: HapticTab,
       }}>
       <Tabs.Screen
-        name="index"
+        name="leads"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Leads',
+          tabBarIcon: ({ color }) => <Octicons size={28} name="project-roadmap" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="generation"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Generation',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons size={28} name="solar-power-variant" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="o&m"
+        options={{
+          title: 'O&M',
+          tabBarIcon: ({ color }) => <FontAwesome5 size={28} name="tools" color={color} />,
         }}
       />
     </Tabs>
