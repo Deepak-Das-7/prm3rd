@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "948612823218",
+    "project_id": "prm3rd-768b4",
+    "storage_bucket": "prm3rd-768b4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948612823218:android:a5f4af3c5eed17080fb1ab",
+        "android_client_info": {
+          "package_name": "com.feniceenergy.p3rd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY79s0RRKtALJ093CB9Yz92H4tvho4Tjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
